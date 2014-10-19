@@ -1,0 +1,40 @@
+/* Style sheet for index.css */
+
+body {border-style:ridge;
+    border-color:#5F4C0B;
+    border-width:10px;}
+
+
+
+div.pos_right {text-align:center;}
+
+table, th, td {text-align:center;
+    font-weight:600;
+    border:1px solid #000000;
+    border-collapse:collapse;}
+
+table {box-shadow: 7px 5px #5F4C0B; }
+
+th {background-color:#A08737;}
+
+td.mc {letter-spacing:3px;}
+
+tr.main {background-color:#CFA417}
+tr.alt {background-color:#F6DA7D}
+
+div.center{text-align:center;}
+
+h3 {text-align:center;}
+
+hr {color:red;
+    width:800px;}
+
+th.col1 {width:50px;}
+th.col2 {width:100px;}
+th.col3 {width:375px;}
+th.col4 {width:180px;}
+th.col5 {width:50px;}
+
+td.col2 {width:50px;}
+td.col5 {width:90px;}
+td.col6 {width:60px;}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bowling for Numbers</title>
+        
+        <script language="JavaScript" SRC="scripts/logic.js"></script>
+        <link rel="stylesheet" type="text/css" href="scripts/style.css" />
+        <center>
+            <img src="image/logo.gif" /><br/>
+        </center>
+    </head>
+
+    <body>
+        <center>
+            <canvas id="canvas" width="640px" height="447px"></canvas><br/>
+        </center>
+        <div class="pos_right">
+        <hr />
+        <select id="num1" onchange="adjustSelect1()" onclick="adjustSelect1()">
+            <option value=""></option>
+        </select>
+        
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        
+        <select id="num2" onchange="adjustSelect2()" onclick="adjustSelect2()">
+            <option value=""></option>
+        </select>
+        
+        =
+        
+        <select id="answer">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+        </select>
+        
+        <button type="button" onclick=submit()>Submit Equation</button>
+        <button type="button" onclick=nextBall()>Next Ball</button>
+        <button type="button" onclick=runningScore()>Calc Score</button>
+        </div>
+        <hr />
+        <table id="myTable" class="center" align="center">
+            <tr>
+                <th class="col1">Frame Number</th>
+                <th class="col2" colspan="2">Dice Roll</th>
+                <th class="col3">Math Calculations</th>
+                <th class="col4" colspan="3">Pins Knocked Down</th>
+                <th class="col5">Frame Total</th>
+            </tr>
+            <tr id="frame1" class="main">
+                <td>1</td>
+                <td id="dr1" class="col2"></td>
+                <td id="dr2" class="col2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1" class="col6"></td>
+                <td id="pkd2" colspan="2" class="col6"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame2" class="alt">
+                <td>2</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame3" class="main">
+                <td>3</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame4" class="alt">
+                <td>4</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame5" class="main">
+                <td>5</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame5" class="alt">
+                <td>6</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame5" class="main">
+                <td>7</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame5" class="alt">
+                <td>8</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame5" class="main">
+                <td>9</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" colspan="1"></td>
+                <td id="pkd2" colspan="2"></td>
+                <td id="ft"></td>
+            </tr>
+            <tr id="frame5" class="alt">
+                <td>10</td>
+                <td id="dr1"></td>
+                <td id="dr2"></td>
+                <td id="mc" class="mc"></td>
+                <td id="pkd1" class="col6"></td>
+                <td id="pkd2" class="col6"></td>
+                <td id="pkd3" class="col6"></td>
+                <td id="ft"></td>
+            </tr>
+            
+        </table>
+        
+    <footer>
+            <h3 id="totalscore"></h3>
+    </footer>
+       
+    <script>
+        initGame();
+    </script>
+       
+    </body>
+
+</html>

@@ -1,0 +1,16 @@
+Group Members:
+-An
+-Ferissa
+-Trevor
+-Gary
+-David
+-Michael
+-Jeffrey
+
+ToDo:
+-Implement edge case (10th frame) ball
+-Implement into code the code summing (instead of manual button)
+-Finalize animations (fun ball animations)
+-Finalize sound effects
+-extend to _+_+_ situations with backwards compatibility with null selects for _+_
+-Fire on ball logo
